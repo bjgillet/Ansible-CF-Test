@@ -7,7 +7,7 @@
     - name: include vars
       include_vars: vars/context.yml
 
-    - name: test html page
+    - name: simple motd update
       copy:
         content: "From CloudForms : {{ motd_text }}"
         dest: /etc/motd
